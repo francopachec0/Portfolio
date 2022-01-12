@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto';
+    overflow-x: hidden;
+}
+
+.landing {
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    background-color: black;
+}
+
+.brand {
+    margin-top: -7px;
+    color: #b08968;
+}
+
+.menu {
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+
+.menu li {
+    list-style: none;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    transition: 0.2s ease;
+}
+
+.menu a:hover {
+    color: #b08968;
+}
+
+/* landing page */
+
+.main {
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+
+.main h3 {
+    color: white;
+    font-size: 32px;
+}
+.main h2 {
+    color: white;
+    font-size: 46px;
+    font-weight: 600;
+}
+
+.main span {
+    color: white;
+    padding: 2px;
+    text-decoration: underline;
+}
+.main a{
+    display: inline-block;
+    background: #b08968;
+    color: white;
+    font-size: 25px;
+    padding: 10px 20px;
+    margin-top: 35px;
+    border-radius: 6px;
+    border: 2px solid #b08968;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.main a:hover{
+    color: #b08968;
+    background: none;
+}
+
+/* about me section */
+
+.about {
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/3.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 30px 60px 90px 60px;
+}
+
+.about h1 {
+    color: white;
+    text-align: center;
+    font-size: 42px;
+}
+
+.about h4 {
+    color: #b08968;
+    text-align: center;
+}
+
+.about p {
+    color: white;
+    font-size: 20px;
+}
+
+.about span {
+    color: #b08968;
+}
+
+.download{
+    font-family: 'Roboto';
+    display: inline-block;
+    background: none;
+    color: #70e000;
+    font-size: 25px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid #70e000;
+    transition: all 0.3s ease;
+    margin-left: 78%;
+}
+
+.download:hover{
+    color: #008000;
+    background: none;
+}
+
+/* skills section */
+
+.skills {
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/4.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.skills h1 {
+    color: white;
+    font-size: 34px;
+    padding-top: 10%;
+    padding-left: 2%;
+}
+
+.skills p {
+    color: white;
+    font-size: 20px;
+    padding-left: 2%;
+    padding-right: 20%;
+}
+
+.skills span {
+    color: #b08968;
+}
+
+/* contact section */
+
+.contact {
+    width: 100vw;
+    height: 100vh;
+    background: url('../images/1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.contact_form h4 {
+    font-size: 34px;
+    padding-left: 10%;
+    padding-top: 10%;
+    color: white;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    margin-top: 2em;
+    margin-left: 7%;
+}
+
+.form input {
+    padding: 10px 20px;
+    margin-bottom: 1em;
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+}
+
+.form textarea {
+    height: 150px;
+    background: none;
+    color: white;
+    padding: 1em;
+    border: 1px solid white;
+}
+
+.btn_submit {
+    padding: 9px 15px;
+    margin: 1em;
+    border: none;
+    text-transform: uppercase;
+    background-color: #b08968;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn_submit:hover {
+    background: none;
+    border: 1px solid #b08968;
+}
+
+/* footer section */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100px;  
+    background-color: black;
+}
+
+.footer_content h2{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer_content h4{
+    color: #b08968;
+    font-size: 15px;
+    text-align: center;
+}
+
+.social_network {
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 5px;
+}
+
+.social_network i {
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.1s ease;
+}
+
+.social_network .fa-linkedin:hover {
+    color: #1a659e;
+}
+
+.social_network .fa-whatsapp:hover {
+    color: #7ae582;
+}
+
